@@ -34,4 +34,9 @@ gg_base+
   geom_line(color = "dodgerblue",
             linetype = "longdash")
 
+gg_base+
+  geom_point(
+    aes(size=visitors,
+        color=visitors),
+  alpha=0.5)
 ```
