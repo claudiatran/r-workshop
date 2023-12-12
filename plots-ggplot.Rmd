@@ -35,8 +35,12 @@ gg_base+
             linetype = "longdash")
 
 gg_base+
-  geom_point(
-    aes(size=visitors,
-        color=visitors),
-  alpha=0.5)
+  geom_line(linetype="dotted")+
+  theme_bw()+
+  labs(
+    x="Year",
+    y="Annual Park Visitors",
+    title="Channel Island NP Visitation",
+    subtitle="(1963-2016)"
+  )
 ```
